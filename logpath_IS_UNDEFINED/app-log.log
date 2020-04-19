@@ -129,3 +129,124 @@ Unconditional classes:
 2020-04-19 08:42:10,297 DEBUG org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -- Environment api-shop-manager has 1 property sources with 42 properties.
 2020-04-19 08:42:10,299 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -- Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource@1010266949 {name='configClient', properties={config.client.version=8950436496cbe2ce23d20b4de82ccdd449310400}}, OriginTrackedMapPropertySource@826559404 {name='file:///D:/gdc_system/api-shop-manager-dev.yml', properties={gdc.datasource.first.databasePlatform=org.hibernate.dialect.MySQL5InnoDBDialect, gdc.cache.redis.server=127.0.0.1, gdc.datasource.first.username=root, zuul.ignored-headers=Access-Control-Allow-Credentials, Access-Control-Allow-Origin, gdc.datasource.first.show-sql=true, eureka.client.healthcheck.enabled=true, gdc.server.ip=localhost, ribbon.ReadTimeout=30000, gdc.server.port=0, security.oauth2.client.client-secret=gdcapishopsecret, gdc.msgbroker.rabbitmq.username=guest, zuul.routes.person-service.serviceId=gdc-person-service, ribbon.ServerListRefreshInterval=5000, gdc.msgbroker.rabbitmq.host=localhost, eureka.client.enabled=true, gdc.cache.redis.password=0, eureka.client.serviceUrl.defaultZone=${EUREKA_URI:http://localhost:8761/eureka}, gdc.datasource.first.hibernate-ddl-auto=none, zuul.routes.auth-service.serviceId=gdc-auth-service, log.path=D:/var/logs/${spring.application.name}, gdc.datasource.first.url=jdbc:mysql://localhost:3306/gdc_shop, log.level.root=INFO, gdc.datasource.first.password=root, gdc.datasource.first.driverClassName=com.mysql.jdbc.Driver, zuul.routes.shop-service.path=/apishop/**, log.level.gdc=TRACE, zuul.routes.auth-service.path=/apiauth/**, gdc.auth.expire-time=3600000, logging.config=classpath:./logback-spring.xml, eureka.client.registryFetchIntervalSeconds=15, gdc.cache.redis.port=6379, zuul.routes.item-service.serviceId=gdc-item-service, gdc.msgbroker.rabbitmq.port=61613, security.oauth2.resource.token-info-uri=http://localhost:8762/oauth/check_token, security.oauth2.client.client-id=gdcapishop, gdc.msgbroker.rabbitmq.password=guest, zuul.routes.auth-service.sensitiveHeaders=, zuul.routes.shop-service.serviceId=gdc-shop-service, log.level.api=TRACE, zuul.routes.item-service.path=/apiitem/**, gdc.auth.secret-key=thisisasecreatkey, zuul.routes.person-service.path=/apiperson/**}}]}
 2020-04-19 08:42:10,304 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'logging.config' in PropertySource 'bootstrapProperties' with value of type String
+2020-04-19 11:34:32,175 DEBUG org.springframework.boot.context.logging.ClasspathLoggingApplicationListener -- Application started with classpath: [file:/D:/workspace_gdc/api-shop-manager/target/classes/]
+2020-04-19 11:34:32,263 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'spring.application.name' in PropertySource 'configurationProperties' with value of type String
+2020-04-19 11:34:32,263 DEBUG org.springframework.boot.SpringApplication -- Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2020-04-19 11:34:32,274 DEBUG org.springframework.boot.context.config.ConfigFileApplicationListener -- Activated activeProfiles dev
+2020-04-19 11:34:32,274 DEBUG org.springframework.boot.context.config.ConfigFileApplicationListener -- Loaded config file 'file:/D:/workspace_gdc/api-shop-manager/target/classes/bootstrap.yml' (classpath:/bootstrap.yml)
+2020-04-19 11:34:32,274 DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext -- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71449d2c
+2020-04-19 11:34:32,303 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-04-19 11:34:32,359 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2020-04-19 11:34:33,142 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'spring.cloud.config.enabled' in PropertySource 'configurationProperties' with value of type Boolean
+2020-04-19 11:34:33,144 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2020-04-19 11:34:33,145 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator'
+2020-04-19 11:34:33,146 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-04-19 11:34:33,147 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-04-19 11:34:33,147 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-04-19 11:34:33,148 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-04-19 11:34:33,148 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2020-04-19 11:34:33,148 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2020-04-19 11:34:33,148 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+2020-04-19 11:34:33,163 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'configurationPropertiesBeans'
+2020-04-19 11:34:33,163 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration'
+2020-04-19 11:34:33,164 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-19 11:34:33,165 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'bootstrapImportSelectorConfiguration'
+2020-04-19 11:34:33,165 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration'
+2020-04-19 11:34:33,184 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'configServicePropertySource'
+2020-04-19 11:34:33,184 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.cloud.config.client.ConfigServiceBootstrapConfiguration'
+2020-04-19 11:34:33,185 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'configClientProperties'
+2020-04-19 11:34:33,186 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'spring.application.name' in PropertySource 'configurationProperties' with value of type String
+2020-04-19 11:34:33,186 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'spring.application.name' in PropertySource 'environmentProperties' with value of type String
+2020-04-19 11:34:33,190 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Autowiring by type from bean name 'configServicePropertySource' via factory method to bean named 'configClientProperties'
+2020-04-19 11:34:33,192 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2020-04-19 11:34:33,192 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'spring.cloud.config-org.springframework.cloud.bootstrap.config.PropertySourceBootstrapProperties'
+2020-04-19 11:34:33,203 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration'
+2020-04-19 11:34:33,204 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'encrypt-org.springframework.cloud.bootstrap.encrypt.KeyProperties'
+2020-04-19 11:34:33,206 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'environmentDecryptApplicationListener'
+2020-04-19 11:34:33,206 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'configurationPropertiesRebinder'
+2020-04-19 11:34:33,206 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Autowiring by type from bean name 'configurationPropertiesRebinder' via factory method to bean named 'configurationPropertiesBeans'
+2020-04-19 11:34:33,207 DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory -- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2020-04-19 11:34:33,210 DEBUG org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener -- 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   ConfigServiceBootstrapConfiguration#configServicePropertySource matched:
+      - @ConditionalOnProperty (spring.cloud.config.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.retry.annotation.Retryable' (OnClassCondition)
+
+   DiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EurekaDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-04-19 11:34:33,211 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2020-04-19 11:34:35,012 DEBUG org.springframework.boot.context.logging.ClasspathLoggingApplicationListener -- Application started with classpath: [file:/D:/workspace_gdc/api-shop-manager/target/classes/]
+2020-04-19 11:34:35,016 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'spring.application.name' in PropertySource 'configurationProperties' with value of type String
+2020-04-19 11:34:35,019 INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -- Fetching config from server at : http://localhost:8888/
+2020-04-19 11:34:35,019 DEBUG org.springframework.web.client.RestTemplate -- HTTP GET http://localhost:8888/api-shop-manager/dev
+2020-04-19 11:34:35,042 DEBUG org.springframework.web.client.RestTemplate -- Accept=[application/json, application/*+json]
+2020-04-19 11:34:36,993 DEBUG org.springframework.web.client.RestTemplate -- Response 200 OK
+2020-04-19 11:34:36,994 DEBUG org.springframework.web.client.RestTemplate -- Reading to [org.springframework.cloud.config.environment.Environment]
+2020-04-19 11:34:36,995 INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -- Located environment: name=api-shop-manager, profiles=[dev], label=null, version=8950436496cbe2ce23d20b4de82ccdd449310400, state=null
+2020-04-19 11:34:36,995 DEBUG org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -- Environment api-shop-manager has 1 property sources with 42 properties.
+2020-04-19 11:34:36,996 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -- Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource@325107736 {name='configClient', properties={config.client.version=8950436496cbe2ce23d20b4de82ccdd449310400}}, OriginTrackedMapPropertySource@591158951 {name='file:///D:/gdc_system/api-shop-manager-dev.yml', properties={gdc.datasource.first.databasePlatform=org.hibernate.dialect.MySQL5InnoDBDialect, gdc.cache.redis.server=127.0.0.1, gdc.datasource.first.username=root, zuul.ignored-headers=Access-Control-Allow-Credentials, Access-Control-Allow-Origin, gdc.datasource.first.show-sql=true, eureka.client.healthcheck.enabled=true, gdc.server.ip=localhost, ribbon.ReadTimeout=30000, gdc.server.port=0, security.oauth2.client.client-secret=gdcapishopsecret, gdc.msgbroker.rabbitmq.username=guest, zuul.routes.person-service.serviceId=gdc-person-service, ribbon.ServerListRefreshInterval=5000, gdc.msgbroker.rabbitmq.host=localhost, eureka.client.enabled=true, gdc.cache.redis.password=0, eureka.client.serviceUrl.defaultZone=${EUREKA_URI:http://localhost:8761/eureka}, gdc.datasource.first.hibernate-ddl-auto=none, zuul.routes.auth-service.serviceId=gdc-auth-service, log.path=D:/var/logs/${spring.application.name}, gdc.datasource.first.url=jdbc:mysql://localhost:3306/gdc_shop, log.level.root=INFO, gdc.datasource.first.password=root, gdc.datasource.first.driverClassName=com.mysql.jdbc.Driver, zuul.routes.shop-service.path=/apishop/**, log.level.gdc=TRACE, zuul.routes.auth-service.path=/apiauth/**, gdc.auth.expire-time=3600000, logging.config=classpath:./logback-spring.xml, eureka.client.registryFetchIntervalSeconds=15, gdc.cache.redis.port=6379, zuul.routes.item-service.serviceId=gdc-item-service, gdc.msgbroker.rabbitmq.port=61613, security.oauth2.resource.token-info-uri=http://localhost:8762/oauth/check_token, security.oauth2.client.client-id=gdcapishop, gdc.msgbroker.rabbitmq.password=guest, zuul.routes.auth-service.sensitiveHeaders=, zuul.routes.shop-service.serviceId=gdc-shop-service, log.level.api=TRACE, zuul.routes.item-service.path=/apiitem/**, gdc.auth.secret-key=thisisasecreatkey, zuul.routes.person-service.path=/apiperson/**}}]}
+2020-04-19 11:34:36,997 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver -- Found key 'logging.config' in PropertySource 'bootstrapProperties' with value of type String

@@ -25,4 +25,9 @@ public class TestController {
 	public Object test2() {
 		return "This is a Shop service API test2 path";
 	}
+	
+	@RequestMapping(value= {"/test3"})
+	public Object test3() {
+		return "This is a Shop service API test2 path";
+	}
 }
